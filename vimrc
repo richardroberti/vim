@@ -1,8 +1,19 @@
-imap <F5> <Esc>:w<CR>:!clear;python3 %<CR>
-nmap <F5> <Esc>:w<CR>:!clear;python3 %<CR>
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+
+map <F5> <Esc>:w<CR>:!clear;python3 %<CR>
+map <F6> :NERDTreeToggle<CR>
+
+
+colorscheme gruvbox
+set background=dark
 
 syntax on
-
 set number
 set mouse=a
 set visualbell t_vb= 
