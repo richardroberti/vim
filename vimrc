@@ -1,14 +1,16 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'scrooloose/nerdtree'            " Project and file navigation
+Plug 'majutsushi/tagbar'              " Class/module browser
+Plug 'fisadev/FixedTaskList.vim'      " Pending tasks list
+Plug 'freeo/vim-kalisi'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-
 map <F5> <Esc>:w<CR>:!clear;python3 %<CR>
 map <F6> :NERDTreeToggle<CR>
-
 
 colorscheme gruvbox
 set background=dark
